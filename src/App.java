@@ -1,10 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Máquina Expendedora de Productos - Contexto Colombia
- * Todo el código integrado en la clase App
- */
 public class App {
 
     // Almacenamiento de datos (ArrayLists paralelos)
@@ -21,7 +17,7 @@ public class App {
     static Scanner leer = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Inicialización de datos
+        
         nombres.add("Papas Margarita (Natural)");
         precios.add(2500);
         stock.add(10);
@@ -46,7 +42,6 @@ public class App {
         precios.add(1500);
         stock.add(10);
 
-        // Menú Principal
         boolean salir = false;
         while (!salir) {
             System.out.println("\n========================================");
@@ -85,7 +80,7 @@ public class App {
         }
     }
 
-    // --- MÉTODOS DE LÓGICA (Siguen siendo estáticos para orden) ---
+
 
     static void comprarProducto() {
         System.out.println("\n--- PRODUCTOS DISPONIBLES ---");
